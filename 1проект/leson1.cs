@@ -21,15 +21,6 @@ namespace _1проект
             // Задача "Анкета специального агента": Написать программу, которая спрашивает у пользователя его имя, его кодовое имя (псевдоним) и возраст.
             // В конце программа должна вывести одну красивую строчку о данных пользователя(имя, псевдоним, возраст)
 
-            /*
-            Console.Write("Ваше имя?");
-            String name_1 = Console.ReadLine();
-            Console.Write("Ваше кодовое имя ?");
-            String name_2 = Console.ReadLine();
-            Console.Write("Ваш возраст? ");
-            String age_1 = Console.ReadLine();
-            Console.WriteLine("Ваше имя = " + name_1 + ", Ваше кодовое имя = " + name_2 + ", Ваш возраст = " + age_1);
-            */
             
             Console.Write("Введи первое число: ");
             int number_1 = Convert.ToInt32(Console.ReadLine());
