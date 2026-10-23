@@ -8,8 +8,8 @@ namespace _1проект
     {
         public void ExecuteWhileCycles()
         {
-            while
-int i = 1;
+           
+            int i = 1;
             while (i <= 5)
             {
                 Console.Write(i + " ");
@@ -18,7 +18,7 @@ int i = 1;
 
             Console.WriteLine();
 
-            for
+            
             for (int j = 1; j <= 5; j++)
             {
                 Console.Write(j + " ");
