@@ -1,6 +1,55 @@
 ﻿using _1проект;
 using System.Globalization;
 
+PrintLines('-', 50);
+Console.WriteLine("   ДОБРО ПОЖАЛОВАТЬ");
+PrintLines('*', 50);
+
+Console.Write("Введите первое число: ");
+int a = int.Parse(Console.ReadLine());
+
+PrintLines('=', 20);
+
+Console.Write("Введите второе число: ");
+int b = int.Parse(Console.ReadLine());
+
+PrintLines('&',20);
+Console.WriteLine("Сумма: " + (a + b));
+PrintLines('#',20);
+
+PrintL();
+PrintL();
+
+GetClientInfo(5, "Родион", 567575);
+GetClientInfo(55, "John", 9797);
+
+// методы
+static void PrintLines(char symbol, int length)
+{ 
+    for (int i = 0; i < length; i++)
+    {
+        Console.Write(symbol);
+    }
+    Console.WriteLine();
+}
+
+static void GetClientInfo(int id, string Name, int phone)
+{
+    Console.WriteLine("Id клиента: " + id);
+    Console.WriteLine("Имя: " + Name);
+    Console.WriteLine("Телефон: " + phone);
+}
+
+static void Print()
+{
+    Console.WriteLine("=====================");
+}
+static void PrintL()
+{
+    Console.WriteLine("1 - Сложить");
+    Console.WriteLine("2 - Умножить");
+    Console.WriteLine("0 - Выход");
+}
 
 
 
