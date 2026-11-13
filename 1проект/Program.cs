@@ -3,7 +3,7 @@ using System.Text;
 {
     Console.OutputEncoding = Encoding.UTF8;
 }
-
+/*
 // Метод-исполнитель - выполняет ту логику, что прописана внутри.
 // В данном случае печатает строки в консоль
 // Без параметров; ничего не возвращает
@@ -37,7 +37,22 @@ static void Method1()
 
     }
 }
+*/
 
 // Задание 1 «Экран загрузки»: Создай метод ShowLoading(), который имитирует загрузку игры.
 // Он должен вывести текст Загрузка и затем в цикле 3 раза дописать точку с небольшой паузой (System.Threading.Thread.Sleep(500);).
 // В конце вывести Готово!.
+
+
+ShowLoading();
+static void ShowLoading()
+{
+    Console.Write("Загрузка");
+    for(int t = 1;t < 4; t++)
+    {
+        Thread.Sleep(1000);
+        Console.Write(".");
+        
+    }
+    Console.WriteLine("Готово!");
+}
