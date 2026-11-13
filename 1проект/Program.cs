@@ -56,3 +56,27 @@ static void ShowLoading()
     }
     Console.WriteLine("Готово!");
 }
+
+// Метод "Исполнитель-приёмник" - принимает данные(параметры) извне
+// и выполняет ту логику, что прописана внутри, используя принятые данные.
+// Принимает на вход имя пользователя (string name) и возраст(int age) и здоровается лично с ним
+// С двумя параметром; ничего не возвращает
+
+Greet(15,"Anna");
+Sum(10, 20);
+static void Greet(int age, string name)
+{
+    Console.WriteLine($"Привет, {name} Тебе {age} лет");
+
+}
+
+static void Sum(int a, int b)
+{
+    int sum = a + b;
+    Console.WriteLine($"Sum: {sum}");
+}
+
+
+// Задание 2 «Индикатор здоровья»: Создай метод DrawHealthBar(int currentHp, int maxHp).
+// Он должен нарисовать в консоли полоску жизни персонажа из символов '♥'
+// Например, если currentHp = 3, а maxHp = 5, метод выведет: [ ♥ ♥ ♥ · · ].
