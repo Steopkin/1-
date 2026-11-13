@@ -1,3 +1,4 @@
+using System.Data;
 using System.Text;
 
 {
@@ -37,7 +38,7 @@ static void Method1()
 
     }
 }
-*/
+
 
 // Задание 1 «Экран загрузки»: Создай метод ShowLoading(), который имитирует загрузку игры.
 // Он должен вывести текст Загрузка и затем в цикле 3 раза дописать точку с небольшой паузой (System.Threading.Thread.Sleep(500);).
@@ -75,8 +76,25 @@ static void Sum(int a, int b)
     int sum = a + b;
     Console.WriteLine($"Sum: {sum}");
 }
+*/
 
 
 // Задание 2 «Индикатор здоровья»: Создай метод DrawHealthBar(int currentHp, int maxHp).
 // Он должен нарисовать в консоли полоску жизни персонажа из символов '♥'
 // Например, если currentHp = 3, а maxHp = 5, метод выведет: [ ♥ ♥ ♥ · · ].
+
+
+SuDrawHealthBarm(10, 10);
+static void SuDrawHealthBarm(int currentHp, int maxHp)
+{
+    Console.Write('[');
+    for(int b=0; b < currentHp; b++)
+    {
+        Console.Write('♥');
+    }
+    for (int x = 0; x < maxHp - currentHp; x++)
+    {
+        Console.Write('·');
+    }
+    Console.Write(']');
+}
