@@ -4,13 +4,22 @@ using System.Text;
 {
     Console.OutputEncoding = Encoding.UTF8;
 }
-/*
+
 // Метод-исполнитель - выполняет ту логику, что прописана внутри.
 // В данном случае печатает строки в консоль
 // Без параметров; ничего не возвращает
-
+/*
 PrintMenu();
 RocketCountdown();
+
+SuDrawHealthBarm(10, 10);
+
+Greet(15, "Anna");
+Sum(10, 20);
+
+ShowLoading();
+*/
+
 static void PrintMenu()
 {
     Console.WriteLine("1 - Сложить");
@@ -45,7 +54,6 @@ static void Method1()
 // В конце вывести Готово!.
 
 
-ShowLoading();
 static void ShowLoading()
 {
     Console.Write("Загрузка");
@@ -63,8 +71,7 @@ static void ShowLoading()
 // Принимает на вход имя пользователя (string name) и возраст(int age) и здоровается лично с ним
 // С двумя параметром; ничего не возвращает
 
-Greet(15,"Anna");
-Sum(10, 20);
+
 static void Greet(int age, string name)
 {
     Console.WriteLine($"Привет, {name} Тебе {age} лет");
@@ -76,7 +83,7 @@ static void Sum(int a, int b)
     int sum = a + b;
     Console.WriteLine($"Sum: {sum}");
 }
-*/
+
 
 
 // Задание 2 «Индикатор здоровья»: Создай метод DrawHealthBar(int currentHp, int maxHp).
@@ -84,7 +91,11 @@ static void Sum(int a, int b)
 // Например, если currentHp = 3, а maxHp = 5, метод выведет: [ ♥ ♥ ♥ · · ].
 
 
+<<<<<<< Updated upstream
 SuDrawHealthBarm(3, 10);
+=======
+
+>>>>>>> Stashed changes
 static void SuDrawHealthBarm(int currentHp, int maxHp)
 {
     Console.Write('[');
@@ -98,3 +109,42 @@ static void SuDrawHealthBarm(int currentHp, int maxHp)
     }
     Console.Write(']');
 }
+
+// Метод "Информатор" - сообщает и передаёт данные указанного возвращаемого типа (в данном случае - string)
+// Если вызвать этот метод, то он сообщает текущую версию программы
+// Без параметров; возвращает данные типа string
+
+string pass = GetProgramVersion();
+
+static string GetProgramVersion()
+{
+    Console.WriteLine("fsfsfs");
+    Console.WriteLine("fsfsfs");
+    Console.WriteLine("fsfsfs");
+    Console.WriteLine("fsfsfs");
+
+    string password = "2234";
+    return password;
+}
+
+int b;
+b = GetUserId();
+//Console.WriteLine(b);
+
+// Без параметров; возвращает данные типа int
+static int GetUserId()
+{
+    for (int a = 1; a < 5; a++)
+    {
+
+    }
+
+    int userId = 123;
+    int sum = userId + 20;
+    return sum;
+}
+
+// Задание 3 «Генератор пароля из 4 цифр»: Создай метод GeneratePinCode(),
+// который генерирует 4 случайные цифры,
+// склеивает их в одну строку (например, "0492") и возвращает эту строку наружу.
+// Результат(пароль) вывести в консоль.
