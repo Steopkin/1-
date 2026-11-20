@@ -141,10 +141,16 @@ static int GetUserId()
 }
 */
 
+
+// Задание 3 «Генератор пароля из 4 цифр»: Создай метод GeneratePinCode(),
+// который генерирует 4 случайные цифры,
+// склеивает их в одну строку (например, "0492") и возвращает эту строку наружу.
+// Результат(пароль) вывести в консоль.
+/*
 string c;
 c = GeneratePinCode();
 Console.WriteLine(c);
-Console.WriteLine(GeneratePinCode());
+Console.WriteLine(GeneratePinCode());*/
 
 static string GeneratePinCode()
 {
@@ -160,10 +166,37 @@ static string GeneratePinCode()
     }
     return password;
 
-
 }
 
-// Задание 3 «Генератор пароля из 4 цифр»: Создай метод GeneratePinCode(),
-// который генерирует 4 случайные цифры,
-// склеивает их в одну строку (например, "0492") и возвращает эту строку наружу.
-// Результат(пароль) вывести в консоль.
+// Метод "Универсал" - и принимает данные(параметры) и передаёт данные указанного возвращаемого типа 
+// Принимает два числа, складывает их и возвращает результат в виде числа
+int n = 10;
+
+int resilt = CalculateSomething3(n, 20);
+static int CalculateSomething3(int a, int b)
+{
+    int result = a + b;
+    return result;
+}
+
+static int CountAllUsers(string[] users)
+{
+    int count = 0;
+    foreach (string user in users)
+    {
+        count++;
+    }
+    return count;
+}
+
+bool isEven = true;
+bool isActive = false;
+bool isCritical = false;
+int damage = 20;
+CalculateDamage(damage, false);
+
+
+// Задание 4 «Критический урон»: Создайте метод CalculateDamage(int baseDamage, bool isCritical).
+// Если параметр isCritical равен true, метод возвращает удвоенный урон.
+// Если false — возвращает обычный базовый урон.
+// Нужно вывести результат(урон) наружу
