@@ -18,7 +18,7 @@ Greet(15, "Anna");
 Sum(10, 20);
 
 ShowLoading();
-*/
+
 
 static void PrintMenu()
 {
@@ -91,11 +91,7 @@ static void Sum(int a, int b)
 // Например, если currentHp = 3, а maxHp = 5, метод выведет: [ ♥ ♥ ♥ · · ].
 
 
-<<<<<<< Updated upstream
-SuDrawHealthBarm(3, 10);
-=======
-
->>>>>>> Stashed changes
+ 
 static void SuDrawHealthBarm(int currentHp, int maxHp)
 {
     Console.Write('[');
@@ -142,6 +138,29 @@ static int GetUserId()
     int userId = 123;
     int sum = userId + 20;
     return sum;
+}
+*/
+
+string c;
+c = GeneratePinCode();
+Console.WriteLine(c);
+Console.WriteLine(GeneratePinCode());
+
+static string GeneratePinCode()
+{
+    string password = "";
+    Random rand = new Random();
+    for (int a =1; a < 5; a++)
+    {
+                  
+        int randomNumber = rand.Next(0, 10); 
+        Console.WriteLine(randomNumber);
+        password = password + randomNumber;
+       
+    }
+    return password;
+
+
 }
 
 // Задание 3 «Генератор пароля из 4 цифр»: Создай метод GeneratePinCode(),
