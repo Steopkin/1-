@@ -200,3 +200,9 @@ CalculateDamage(damage, false);
 // Если параметр isCritical равен true, метод возвращает удвоенный урон.
 // Если false — возвращает обычный базовый урон.
 // Нужно вывести результат(урон) наружу
+
+static int CalculateDamage( int baseDamage[],bool isCritical)
+{
+    if
+
+}
