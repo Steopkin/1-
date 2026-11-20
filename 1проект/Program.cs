@@ -84,7 +84,7 @@ static void Sum(int a, int b)
 // Например, если currentHp = 3, а maxHp = 5, метод выведет: [ ♥ ♥ ♥ · · ].
 
 
-SuDrawHealthBarm(10, 10);
+SuDrawHealthBarm(3, 10);
 static void SuDrawHealthBarm(int currentHp, int maxHp)
 {
     Console.Write('[');
